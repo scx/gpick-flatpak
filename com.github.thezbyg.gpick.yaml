@@ -1,4 +1,4 @@
-app-id: org.thezbyg.gpick
+app-id: com.github.thezbyg.gpick
 runtime: org.freedesktop.Platform
 runtime-version: '18.08'
 sdk: org.freedesktop.Sdk

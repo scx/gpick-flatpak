@@ -54,19 +54,19 @@ $ flatpak install flathub org.freedesktop.Platform//18.08
 ### Build
 
 ```
-$ mkdir -p build && flatpak-builder "build" "org.thezbyg.gpick.yaml" --force-clean --install-deps-from="flathub"
+$ mkdir -p build && flatpak-builder "build" "com.github.thezbyg.gpick.yaml" --force-clean --install-deps-from="flathub"
 ```
 
 ### Test
 
 ```
-$ flatpak-builder --run "build" "org.thezbyg.gpick.yaml" "sh"
+$ flatpak-builder --run "build" "com.github.thezbyg.gpick.yaml" "sh"
 ```
 
 ### Run
 
 ```
-$ flatpak-builder --run "build" "org.thezbyg.gpick.yaml" "gpick"
+$ flatpak-builder --run "build" "com.github.thezbyg.gpick.yaml" "gpick"
 ```
 
 ## FAQ
