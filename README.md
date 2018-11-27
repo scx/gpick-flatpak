@@ -51,6 +51,14 @@ $ flatpak install flathub org.freedesktop.Sdk//18.08
 $ flatpak install flathub org.freedesktop.Platform//18.08
 ```
 
+```
+$ git submodule init
+```
+
+```
+$ git submodule update
+```
+
 ### Build
 
 ```
@@ -68,6 +76,8 @@ $ flatpak-builder --run "build" "com.github.thezbyg.gpick.yaml" "sh"
 ```
 $ flatpak-builder --run "build" "com.github.thezbyg.gpick.yaml" "gpick"
 ```
+
+See also: [Building your first Flatpak](http://docs.flatpak.org/en/latest/first-build.html)
 
 ## FAQ
 
