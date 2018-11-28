@@ -44,11 +44,11 @@ See also:
 ### Prepare
 
 ```
-$ flatpak install flathub org.freedesktop.Sdk//18.08
+$ flatpak install flathub "org.freedesktop.Sdk//18.08"
 ```
 
 ```
-$ flatpak install flathub org.freedesktop.Platform//18.08
+$ flatpak install flathub "org.freedesktop.Platform//18.08"
 ```
 
 ```
@@ -62,7 +62,7 @@ $ git submodule update
 ### Build
 
 ```
-$ mkdir -p build && flatpak-builder "build" "com.github.thezbyg.gpick.yaml" --force-clean --install-deps-from="flathub"
+$ mkdir -p "build" && flatpak-builder "build" "com.github.thezbyg.gpick.yaml" --force-clean --install-deps-from="flathub"
 ```
 
 ### Test
@@ -71,10 +71,40 @@ $ mkdir -p build && flatpak-builder "build" "com.github.thezbyg.gpick.yaml" --fo
 $ flatpak-builder --run "build" "com.github.thezbyg.gpick.yaml" "sh"
 ```
 
-### Run
+### Test run
 
 ```
 $ flatpak-builder --run "build" "com.github.thezbyg.gpick.yaml" "gpick"
+```
+
+### Install
+
+```
+$ flatpak-builder --repo="repo" --force-clean "build" "com.github.thezbyg.gpick.yaml"
+```
+
+```
+$ flatpak --user remote-add --no-gpg-verify "gpick" "repo"
+```
+
+```
+$ flatpak --user install "gpick" "com.github.thezbyg.gpick"
+```
+
+### Run
+
+```
+$ flatpak run "com.github.thezbyg.gpick"
+```
+
+### Uninstall
+
+```
+$ flatpak --user uninstall "com.github.thezbyg.gpick"
+```
+
+```
+$ flatpak --user remote-delete "gpick"
 ```
 
 See also: [Building your first Flatpak](http://docs.flatpak.org/en/latest/first-build.html)
