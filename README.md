@@ -34,7 +34,7 @@ See also:
 ### Adding repository
 
 ```
-$ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+$ flatpak remote-add --if-not-exists "flathub" "https://dl.flathub.org/repo/flathub.flatpakrepo"
 ```
 
 See also:
@@ -44,11 +44,11 @@ See also:
 ### Prepare
 
 ```
-$ flatpak install flathub "org.freedesktop.Sdk//18.08"
+$ flatpak install "flathub" "org.freedesktop.Sdk//18.08"
 ```
 
 ```
-$ flatpak install flathub "org.freedesktop.Platform//18.08"
+$ flatpak install "flathub" "org.freedesktop.Platform//18.08"
 ```
 
 ```
