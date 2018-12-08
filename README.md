@@ -62,7 +62,7 @@ $ git submodule update
 ### Build
 
 ```
-$ mkdir -p "build" && flatpak-builder "build" "com.github.thezbyg.gpick.yaml" --force-clean --install-deps-from="flathub"
+$ flatpak-builder "build" "com.github.thezbyg.gpick.yaml" --force-clean --install-deps-from="flathub"
 ```
 
 ### Test
