@@ -4,12 +4,21 @@ config-opts:
   - --disable-static
 sources:
   # Source0
-  - type: archive
-    url: https://www.colm.net/files/colm/colm-0.13.0.6.tar.gz
-    sha256: 4644956dd82bedf3795bb1a6fdf9ee8bdd33bd1e7769ef81ffdaa3da70c5a349
-  # Source1
-  - type: script
-    dest-filename: autogen.sh
+  #- type: archive
+  #  url: https://www.colm.net/files/colm/colm-0.13.0.6.tar.gz
+  #  sha256: 4644956dd82bedf3795bb1a6fdf9ee8bdd33bd1e7769ef81ffdaa3da70c5a349
+  #- type: git
+  #  url: git://colm.net/colm.git
+  #  tag: colm-0.13.0.6
+  #  commit: 025d22675b25273b777a011412605705726ac800
+  #- type: archive
+  #  url: https://github.com/kortschak/colm/archive/0.13.0.5.tar.gz
+  #  sha256: 0484837e31c49fa53fd3553a87e71c1fc4edc4b1c07c9671a186b85cdfc680ca
+  - type: git
+    url: https://github.com/kortschak/colm.git
+    tag: colm-0.13.0.5
+    commit: 152832c0bb3c4bcd19709f02e0e70dee12c4c413
+  - type: shell
     commands:
-      - autoreconf --install
+      - autoreconf -vfi;
 cleanup: ['*']

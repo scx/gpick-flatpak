@@ -4,12 +4,21 @@ config-opts:
   - --disable-static
 sources:
   # Source0
-  - type: archive
-    url: https://www.colm.net/files/ragel/ragel-7.0.0.11.tar.gz
-    sha256: 08bac6ff8ea9ee7bdd703373fe4d39274c87fecf7ae594774dfdc4f4dd4a5340
-  # Source1
-  - type: script
-    dest-filename: autogen.sh
+  #- type: archive
+  #  url: https://www.colm.net/files/ragel/ragel-7.0.0.11.tar.gz
+  #  sha256: 08bac6ff8ea9ee7bdd703373fe4d39274c87fecf7ae594774dfdc4f4dd4a5340
+  #- type: git
+  #  url: git://colm.net/ragel.git
+  #  tag: ragel-7.0.0.11
+  #  commit: f1b355eabcafa657c7675dbdc7e1cbc99e8bd5ba
+  #- type: archive
+  #  url: https://github.com/kortschak/ragel/archive/ragel-7.0.0.10.tar.gz
+  #  sha256: d9febc63e7ff54a35d6f00dd61820001bc6b84a802baa3371058891c34fe5927
+  - type: git
+    url: https://github.com/kortschak/ragel.git
+    tag: ragel-7.0.0.10
+    commit: 63474bcdb0af3e73857d1a606d39f1a736f21c10
+  - type: shell
     commands:
-      - autoreconf --install
+      - autoreconf -vfi;
 cleanup: ['*']
