@@ -44,11 +44,11 @@ See also:
 ### Prepare
 
 ```
-$ flatpak install "flathub" "org.freedesktop.Sdk//18.08"
+$ flatpak install "flathub" "org.gnome.Sdk//3.30"
 ```
 
 ```
-$ flatpak install "flathub" "org.freedesktop.Platform//18.08"
+$ flatpak install "flathub" "org.gnome.Platform//3.30"
 ```
 
 ```

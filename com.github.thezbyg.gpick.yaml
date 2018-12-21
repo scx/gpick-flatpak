@@ -1,7 +1,7 @@
 app-id: com.github.thezbyg.gpick
-runtime: org.freedesktop.Platform
-runtime-version: '18.08'
-sdk: org.freedesktop.Sdk
+runtime: org.gnome.Platform
+runtime-version: '3.30'
+sdk: org.gnome.Sdk
 command: gpick
 rename-desktop-file: gpick.desktop
 rename-icon: gpick
@@ -24,7 +24,7 @@ modules:
   - asciidoc.yaml
   - colm.yaml
   - ragel.yaml
-  - adwaita-icon-theme.yaml
+  #- adwaita-icon-theme.yaml
   - scons.yaml
   - gpick.yaml
 cleanup:

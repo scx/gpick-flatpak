@@ -3,9 +3,13 @@ buildsystem: simple
 builddir: true
 sources:
   # Source0
-  - type: archive
-    url: https://github.com/thezbyg/gpick/archive/gpick-0.2.5.tar.gz
-    sha256: 3a9706c101f82e9a49880db9fb408c760d49e6b4506ee5768962c25ec2ecbb57
+  #- type: archive
+  #  url: https://github.com/thezbyg/gpick/archive/gpick-0.2.5.tar.gz
+  #  sha256: 3a9706c101f82e9a49880db9fb408c760d49e6b4506ee5768962c25ec2ecbb57
+  - type: git
+    url: https://github.com/thezbyg/gpick.git
+    commit: 63a770c236866031d945d49e9625857b67fabc08
+  # Source1
   #- type: archive
   #  url: https://github.com/thezbyg/gpick/archive/gpick-0.2.6rc1.tar.gz
   #  sha256: 4e55600a6894fb52ab3d9d4a2fc42580cce289da6912bf916060a5a6301333d8

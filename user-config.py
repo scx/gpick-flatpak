@@ -4,4 +4,4 @@ DESTDIR="/app"
 LOCALEDIR="/app/share/locale"
 ENABLE_NLS=True
 DEBUG=True
-USE_GTK3=False
+USE_GTK3=True
