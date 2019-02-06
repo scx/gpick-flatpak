@@ -115,7 +115,7 @@ See also: [Building your first Flatpak](http://docs.flatpak.org/en/latest/first-
 
 [No](https://github.com/flatpak/flatpak/issues/1557). It is a [MATE](https://github.com/mate-desktop)/[marco](https://github.com/mate-desktop/marco) [issue](https://github.com/mate-desktop/marco/issues/301).
 
-### Why not use an RPM package?
+### Why not a RPM package?
 
 I already provided [COPR repo](https://copr.fedorainfracloud.org/coprs/scx/gpick) with (S)RPM packages for EL.
 
