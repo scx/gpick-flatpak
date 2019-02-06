@@ -62,25 +62,25 @@ $ git submodule update
 ### Build
 
 ```
-$ flatpak-builder "build" "com.github.thezbyg.gpick.yaml" --force-clean --install-deps-from="flathub"
+$ flatpak-builder "build" "com.github.thezbyg.Gpick.yaml" --force-clean --install-deps-from="flathub"
 ```
 
 ### Test
 
 ```
-$ flatpak-builder --run "build" "com.github.thezbyg.gpick.yaml" "sh"
+$ flatpak-builder --run "build" "com.github.thezbyg.Gpick.yaml" "sh"
 ```
 
 ### Test run
 
 ```
-$ flatpak-builder --run "build" "com.github.thezbyg.gpick.yaml" "gpick"
+$ flatpak-builder --run "build" "com.github.thezbyg.Gpick.yaml" "gpick"
 ```
 
 ### Install
 
 ```
-$ flatpak-builder --repo="repo" --force-clean "build" "com.github.thezbyg.gpick.yaml"
+$ flatpak-builder --repo="repo" --force-clean "build" "com.github.thezbyg.Gpick.yaml"
 ```
 
 ```
@@ -88,19 +88,19 @@ $ flatpak --user remote-add --no-gpg-verify "gpick" "repo"
 ```
 
 ```
-$ flatpak --user install "gpick" "com.github.thezbyg.gpick"
+$ flatpak --user install "gpick" "com.github.thezbyg.Gpick"
 ```
 
 ### Run
 
 ```
-$ flatpak run "com.github.thezbyg.gpick"
+$ flatpak run "com.github.thezbyg.Gpick"
 ```
 
 ### Uninstall
 
 ```
-$ flatpak --user uninstall "com.github.thezbyg.gpick"
+$ flatpak --user uninstall "com.github.thezbyg.Gpick"
 ```
 
 ```
