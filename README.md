@@ -84,11 +84,11 @@ $ flatpak-builder --repo="repo" --force-clean "build" "com.github.thezbyg.Gpick.
 ```
 
 ```
-$ flatpak --user remote-add --no-gpg-verify "gpick" "repo"
+$ flatpak --user remote-add --no-gpg-verify "gpick-gtk3" "repo"
 ```
 
 ```
-$ flatpak --user install "gpick" "com.github.thezbyg.Gpick"
+$ flatpak --user install "gpick-gtk3" "com.github.thezbyg.Gpick"
 ```
 
 ### Run
@@ -104,7 +104,7 @@ $ flatpak --user uninstall "com.github.thezbyg.Gpick"
 ```
 
 ```
-$ flatpak --user remote-delete "gpick"
+$ flatpak --user remote-delete "gpick-gtk3"
 ```
 
 See also: [Building your first Flatpak](http://docs.flatpak.org/en/latest/first-build.html)
